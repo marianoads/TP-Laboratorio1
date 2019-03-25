@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1553096255 source:c:\users\alumno\desktop\maximos - minimos\main.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+
