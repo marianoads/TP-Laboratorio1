@@ -229,8 +229,8 @@ int bajaEmpleado(eEmpleado vec[], int tam)
         }
         else
         {
-            printf("No se encuentra legajo");
             system("cls");
+            printf("No se encontro el legajo n: %d",legajo);
         }
     }
 
@@ -241,11 +241,12 @@ int modificarEmpleado (eEmpleado vec[], int tam)
 {
     int legajo;
     char opcion=0;
+    int opcionAux;
     char seguir = 's';
     char auxNombre[20];
     int indice;
 
-    printf("Ingrese numero de legajo");
+    printf("Ingrese numero de legajo :");
     scanf("%d", &legajo);
 
     for(int i=0; i<tam; i++)
@@ -270,31 +271,36 @@ int modificarEmpleado (eEmpleado vec[], int tam)
 
                 printf("\nElija una opcion  :");
                 fflush(stdin);
-                scanf("%d", &opcion);
+                scanf("%d", &opcionAux);
 
-                switch(opcion)
+                switch(opcionAux)
                 {
                 case 1:
-                    printf("Ingrese un nuevo nombre");
-                    gets(auxNombre);
-                    //vec[indice].nombre;
+                    printf("Ingrese un nuevo nombre :\n");
+                    scanf("%s", &auxNombre);
+                    //gets(auxNombre);
+                    strcpy(vec[i].nombre,auxNombre);
+                    system("cls");
                     printf("Modificacion con exito!!");
                     break;
+
                 case 2:
+                    printf("HOLA");
                     break;
                 case 3:
                     break;
                 case 4:
                     break;
                 default:
-                    break;
-                }
+                    printf("Error, reingrese una opcion correcta (1-4)");
+
+
+                } break;
             }
         }
         else
         {
-            printf("Modificacion ERRONEA \n");
-            break;
+                        break;
         }
     return legajo;
 }
