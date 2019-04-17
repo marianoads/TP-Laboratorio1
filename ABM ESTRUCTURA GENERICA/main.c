@@ -3,6 +3,12 @@
 #include <conio.h>
 #include <string.h>
 #define TAM 4
+typedef struct{
+int dia;
+int mes;
+int anio;
+}eFecha;
+
 typedef struct
 {
     int legajo;
@@ -10,6 +16,7 @@ typedef struct
     char sexo;
     float sueldo;
     int estado;
+    eFecha fechaNac;
 } eEmpleado;
 
 void mostrarEmpleado(eEmpleado emp);
@@ -24,7 +31,7 @@ int main()
     int opcion=0;
 
     eEmpleado lista[TAM] = {{123,"Juan",'m',2344,1},{1234,"Maria",'f',223344,1},{321,"Jorge",'m',232344,1}};
-
+    eFecha fec [TAM] = {};
     while(seguir=='s')
     {
         printf(" ***************  ABM EMPLEADOS ***************  \n");
@@ -75,6 +82,7 @@ int main()
         }
         getch();
         system("cls");
+
     }
     return 0;
 }
@@ -88,7 +96,8 @@ void inicializarEmpleado(eEmpleado vec[], int tam)
 
 void mostrarEmpleado(eEmpleado emp)
 {
-    printf("%d %s %c %.2f\n", emp.legajo, emp.nombre, emp.sexo, emp.sueldo);
+    printf("Legajo   Nombre      Fecha de Nacimiento           Sexo      Sueldo     \n");
+    printf("%5d %10s %10d/%2d/%2d %19c    %10.2f \n", emp.legajo,emp.nombre, emp.fechaNac.dia,emp.fechaNac.mes,emp.fechaNac.anio, emp.sexo, emp.sueldo);
 }
 
 void mostrarEmpleados(eEmpleado vec[], int tam)
@@ -181,10 +190,18 @@ int altaEmpleado(eEmpleado vec[], int tam)
             printf("\nIngrese sueldo: ");
             scanf("%f", &vec[indice].sueldo );
 
+            printf("Ingrese mes de nacimiento :");
+            scanf("%d", &vec[indice].fechaNac.dia);
+
+            printf("Ingrese mes de nacimiento :");
+            scanf("%d", &vec[indice].fechaNac.mes);
+
+            printf("Ingrese anio de nacimiento :");
+            scanf("%d", &vec[indice].fechaNac.anio);
+
             vec[indice].estado = 1;
 
             printf("\nAlta empleado exitosa!!!\n\n");
-
         }
 
     }
@@ -213,15 +230,12 @@ int bajaEmpleado(eEmpleado vec[], int tam)
         else
         {
             printf("No se encuentra legajo");
-            break;
-
+            system("cls");
         }
     }
 
     return legajo;
-
 }
-
 
 int modificarEmpleado (eEmpleado vec[], int tam)
 {
@@ -275,19 +289,15 @@ int modificarEmpleado (eEmpleado vec[], int tam)
                 default:
                     break;
                 }
-
             }
-
-
         }
         else
         {
             printf("Modificacion ERRONEA \n");
             break;
         }
-
-
     return legajo;
+}
 }
 
 
