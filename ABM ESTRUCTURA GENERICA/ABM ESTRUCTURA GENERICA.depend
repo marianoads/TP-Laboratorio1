@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1555473781 source:c:\users\mariano\desktop\abm estructura generica\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+
