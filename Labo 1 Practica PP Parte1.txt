@@ -8,6 +8,9 @@ Una empresa necesita administrar los 20 almuerzos de su comedor en planta, para 
 
 	Empleados:
 •	Legajo (autoincremental) No se pide manualmente el legajo
+	int legajoAux=0;
+	empleados[i].legajo) = legajoAux+1;
+	lejagoaux++;
 •	Apellido (máximo 51 caracteres) Validar
 •	Nombre (máximo 51 caracteres) Validar
 •	sexo Validar
@@ -16,13 +19,13 @@ Una empresa necesita administrar los 20 almuerzos de su comedor en planta, para 
 •	idSector (debe existir) Validar
 •	isEmpty Validar
 
-Almuerzo:
+	Almuerzo:
 •	Codigo de almuerzo (autoincremental)
 •	Codigo de menu (debe existir) Validar
 •	Legajo de empleado (debe existir) Validar
 •	Fecha (el dia, mes y año debe estar en los rangos correspondientes) Validar
 
-	Sector:
+	Sector:LISTAR
 •	id (autoincremental)
 •	Descripción (máximo 51 caracteres)  Validar
 
@@ -42,7 +45,7 @@ B)	Modificar: Se ingresará el Código de Empleado, permitiendo en un submenú modi
 •	Sexo
 •	Salario
 •	Fecha de ingreso
-•	Sector 
+•	Sector (LISTAR SECTOR)
 B)	Baja:  Se ingresará el Código de Empleado y se realizará una baja lógica.
 C)	Listar: Hacer un único listado de todos los Empleados ordenados por apellido (ascendente) y nombre (ascendente).
 
