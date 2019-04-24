@@ -2,12 +2,12 @@ Desarrollar en ANSI C:
 Una empresa necesita administrar los 20 almuerzos de su comedor en planta, para sus 100 empleados; y para ello se deberá realizar un programa de acuerdo a lo siguiente:
 
 	Menu:
-•	Código de menu (autoincremental)
+•	Código de menu (autoincremental)=(contador)
 •	Descripción (máximo 51 caracteres)  Validar
 •	Importe (debe ser mayor a cero)  Validar
 
 	Empleados:
-•	Legajo (autoincremental)
+•	Legajo (autoincremental) No se pide manualmente el legajo
 •	Apellido (máximo 51 caracteres) Validar
 •	Nombre (máximo 51 caracteres) Validar
 •	sexo Validar
@@ -42,11 +42,12 @@ B)	Modificar: Se ingresará el Código de Empleado, permitiendo en un submenú modi
 •	Sexo
 •	Salario
 •	Fecha de ingreso
-•	Sector
+•	Sector 
 B)	Baja:  Se ingresará el Código de Empleado y se realizará una baja lógica.
 C)	Listar: Hacer un único listado de todos los Empleados ordenados por apellido (ascendente) y nombre (ascendente).
 
 ALMUERZOS: Se dará de alta cada ocurrencia de Almuerzo, relacionando Menu – Empleado, Fecha y Codigo de Almuerzo.
+--> Hacer otra opcion para dar de alta almuerzo.
 
 
 NOTAS: 
@@ -54,3 +55,60 @@ I.	Se deberá desarrollar bibliotecas por cada entidad, las cuales contendrán las
 II.	Las validaciones deberán estar en una biblioteca aparte. 
 III.	Tener en cuenta que no se podrá ingresar a los casos Modificar, Baja y Listar; sin antes haber realizado al menos un Alta (utilizar contadores).
 IV.	El código deberá tener comentarios con la documentación de cada una de las funciones y respetar las reglas de estilo de la cátedra.
+
+
+
+
+
+
+5 estructuras
+secotres uno a muchos
+menu muchos a muchos.
+
+
+
+1-eEmpleado  - principal
+
+2-eSector    -
+Harcodear: eSector sectores[]={{1, "RRHH"}},{2, "RRHH"},{3, "RRHH"},{4, "RRHH"}};
+
+3-eFecha	   - va a dentro de la estrucura empleado(dentro de almuerzo)
+		
+4-eMenu      -
+Harcodear: eMenu menues: {{1, "SOPA"},{2, "ENSALADA"},{3, "MILANESA"},{4, "Carne"}};
+
+5-eAlmuerzo  -
+
+
+Hacer funcion de inicializacion.
+declaro estructura con parametro
+
+5 SECTORES y 10 MENUES
+
+archivos usados........
+main.c
+empleado.c
+empleado.h   //DOCUMENTAR EN .H
+input.c
+input.h(getint getstring getchar)
+
+
+Relacion de muchos a muchos
+				
+tam [100]  [1000]tamAlmuerzo   tam[10]
+eEmpleado | eAlmuerzo      |   eMenu    |  
+1.M	  | empleadoLegajo |     1.M
+            menuCodigo
+	    Fecha
+
+Mostrar todos los menu por empleado.
+me paro en menu y muestro todos los empleados.
+se hacen 3 for.
+por cada empleado muestro el menu que comieron(primero recorro empleado(for i),  despues recorro almnuerzo (i=j), y despues recorro menu (i=k) y luego muestro (printf)
+
+Cuando tenemos una drelacion de muchos am uchos, hay que trabajar con una 3ra estructura (ALMUERZO)
+
+
+
+
+
