@@ -1,0 +1,174 @@
+# depslib dependency file v1.0
+1557111808 source:c:\users\mariano\desktop\05\projecto abm comidas 05\almuerzo.c
+	<stdio.h>
+	<stdlib.h>
+	"empleado.h"
+	"sector.h"
+	"almuerzo.h"
+	"utn.h"
+
+1557111899 c:\users\mariano\desktop\05\projecto abm comidas 05\empleado.h
+	"empleado.h"
+	"sector.h"
+	"comida.h"
+	"almuerzo.h"
+	"fecha.h"
+	"utn.h"
+
+1557098770 c:\users\mariano\desktop\05\projecto abm comidas 05\sector.h
+	"empleado.h"
+	"sector.h"
+	"comida.h"
+	"almuerzo.h"
+	"utn.h"
+
+1557106031 c:\users\mariano\desktop\05\projecto abm comidas 05\comida.h
+	"empleado.h"
+	"sector.h"
+	"comida.h"
+	"almuerzo.h"
+	"utn.h"
+
+1557111899 c:\users\mariano\desktop\05\projecto abm comidas 05\almuerzo.h
+	"empleado.h"
+	"sector.h"
+	"comida.h"
+	"almuerzo.h"
+	"fecha.h"
+	"utn.h"
+
+1557098770 c:\users\mariano\desktop\05\projecto abm comidas 05\fecha.h
+
+1557098770 c:\users\mariano\desktop\05\projecto abm comidas 05\utn.h
+
+1557106089 source:c:\users\mariano\desktop\05\projecto abm comidas 05\comida.c
+	<stdio.h>
+	<stdlib.h>
+	"empleado.h"
+	"sector.h"
+	"almuerzo.h"
+	"utn.h"
+
+1557106089 source:c:\users\mariano\desktop\05\projecto abm comidas 05\empleado.c
+	<stdio.h>
+	<stdlib.h>
+	"empleado.h"
+	"sector.h"
+	"utn.h"
+
+1557098487 source:c:\users\mariano\desktop\05\projecto abm comidas 05\fecha.c
+
+1557098770 source:c:\users\mariano\desktop\05\projecto abm comidas 05\sector.c
+	<stdio.h>
+	<stdlib.h>
+	"empleado.h"
+	"sector.h"
+	"almuerzo.h"
+	"utn.h"
+
+1557106569 source:c:\users\mariano\desktop\05\projecto abm comidas 05\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<ctype.h>
+
+1557111848 source:c:\users\mariano\desktop\05\projecto abm comidas 05\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	"empleado.h"
+	"sector.h"
+	"comida.h"
+	"almuerzo.h"
+	"utn.h"
+
+1557114433 source:c:\users\mariano\desktop\comidas 05-05\projecto abm comidas 05\comida.c
+	<stdio.h>
+	<stdlib.h>
+	"empleado.h"
+	"sector.h"
+	"almuerzo.h"
+	"utn.h"
+	<string.h>
+
+1557116555 c:\users\mariano\desktop\comidas 05-05\projecto abm comidas 05\empleado.h
+	"empleado.h"
+	"sector.h"
+	"comida.h"
+	"almuerzo.h"
+	"fecha.h"
+	"utn.h"
+
+1557114091 c:\users\mariano\desktop\comidas 05-05\projecto abm comidas 05\sector.h
+	"empleado.h"
+	"sector.h"
+	"comida.h"
+	"almuerzo.h"
+	"utn.h"
+
+1557115710 c:\users\mariano\desktop\comidas 05-05\projecto abm comidas 05\comida.h
+	"empleado.h"
+	"sector.h"
+	"comida.h"
+	"almuerzo.h"
+	"utn.h"
+
+1557114754 c:\users\mariano\desktop\comidas 05-05\projecto abm comidas 05\almuerzo.h
+	"empleado.h"
+	"sector.h"
+	"comida.h"
+	"almuerzo.h"
+	"fecha.h"
+	"utn.h"
+
+1557098770 c:\users\mariano\desktop\comidas 05-05\projecto abm comidas 05\fecha.h
+
+1557098770 c:\users\mariano\desktop\comidas 05-05\projecto abm comidas 05\utn.h
+
+1557115710 source:c:\users\mariano\desktop\comidas 05-05\projecto abm comidas 05\empleado.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"empleado.h"
+	"sector.h"
+	"utn.h"
+
+1557098487 source:c:\users\mariano\desktop\comidas 05-05\projecto abm comidas 05\fecha.c
+
+1557116049 source:c:\users\mariano\desktop\comidas 05-05\projecto abm comidas 05\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	"empleado.h"
+	"sector.h"
+	"comida.h"
+	"almuerzo.h"
+	"utn.h"
+
+1557098770 source:c:\users\mariano\desktop\comidas 05-05\projecto abm comidas 05\sector.c
+	<stdio.h>
+	<stdlib.h>
+	"empleado.h"
+	"sector.h"
+	"almuerzo.h"
+	"utn.h"
+
+1557106569 source:c:\users\mariano\desktop\comidas 05-05\projecto abm comidas 05\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<ctype.h>
+
+1557116679 source:c:\users\mariano\desktop\comidas 05-05\projecto abm comidas 05\almuerzo.c
+	<stdio.h>
+	<stdlib.h>
+	"empleado.h"
+	"sector.h"
+	"almuerzo.h"
+	"comida.h"
+	"utn.h"
+
