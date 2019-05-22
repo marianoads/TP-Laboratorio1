@@ -1,0 +1,12 @@
+Existen dos tipos de archivos.
+
+BINARIOS(Asociado a estructura/interpretacion binaria)
+
+TEXTO(Interpretacion plana'texto plano') Textoplano:Lo que escribo a travez de un editor lo puedo visualziar
+
+Cuando hablamos de registro, hablamos de estructura.(Datos) Osea, archivos de tipos binarios
+
+y archivos de texto lo usamos cuadno la persona a la que le mandamos el archivo no tiene el programa para visualizarlo
+
+
+
